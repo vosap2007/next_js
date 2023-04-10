@@ -1,6 +1,11 @@
+import { contactType } from '../types';
 import Heading from './Heading';
 
-const ContactInfo = ({ contact }) => {
+type contactInfoProp = {
+  contact: contactType;
+};
+
+const ContactInfo = ({ contact }: contactInfoProp) => {
   const { name, email, address } = contact || {};
   const { street, suite, city, zipcode } = address || {};
 
