@@ -1,9 +1,9 @@
-import Tag from './Heading';
+import Heading from './Heading';
 
 const Footer = () => {
   return (
     <footer>
-      <Tag text={'Footer'} tag={'h3'} />
+      <Heading text={'Footer'} tag={'h3'} />
     </footer>
   );
 };
