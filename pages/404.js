@@ -1,11 +1,11 @@
 import Tag from '../components/Heading.js';
 
-const Home = () => {
+const Error = () => {
   return (
     <>
-      <Tag text={'Home Page'} />
+      <Tag text={'Error - 404'} />
     </>
   );
 };
 
-export default Home;
+export default Error;
