@@ -1,9 +1,10 @@
 import Tag from './Heading';
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
     <header>
-      <Tag text={'Header'} tag={'h3'} />
+      <Navbar />
     </header>
   );
 };
