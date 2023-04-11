@@ -1,6 +1,4 @@
-import { headingType } from '../types';
-
-const Heading = ({ tag, text }: headingType) => {
+const Heading = ({ tag, text }) => {
   const Tag = tag || 'h1';
   return <Tag>{text}</Tag>;
 };

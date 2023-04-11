@@ -16,8 +16,3 @@ export type postType = {
   title: string;
   body: string;
 };
-
-export type headingType = {
-  tag?: string;
-  text: string;
-};
