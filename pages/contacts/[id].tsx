@@ -1,5 +1,4 @@
 import ContactInfo from '../../components/ContactInfo';
-import Heading from '../../components/Heading';
 import { GetServerSideProps } from 'next';
 import { contactType } from '../../types';
 
@@ -26,7 +25,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 const Contact = ({ contact }: contactTypeProps) => {
   return (
     <>
-      <Heading text={'Contact'} />
+      <h1>Contact</h1>
       <ContactInfo contact={contact} />
     </>
   );

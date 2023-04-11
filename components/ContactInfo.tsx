@@ -1,5 +1,4 @@
 import { contactType } from '../types';
-import Heading from './Heading';
 
 type contactInfoProp = {
   contact: contactType;
@@ -10,12 +9,12 @@ const ContactInfo = ({ contact }: contactInfoProp) => {
   const { street, suite, city, zipcode } = address || {};
 
   if (!contact) {
-    return <Heading tag="h3" text="Empty contact" />;
+    return <h3>Empty contact</h3>;
   }
 
   return (
     <>
-      <Heading tag="h3" text={name} />
+      <h3>{name}</h3>
       <div>
         <strong>Email:</strong>
         {email}

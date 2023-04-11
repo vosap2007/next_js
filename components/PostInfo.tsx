@@ -1,5 +1,4 @@
 import { postType } from '../types';
-import Heading from './Heading';
 
 type postInfoProps = {
   post: postType;
@@ -9,12 +8,12 @@ const PostInfo = ({ post }: postInfoProps) => {
   const { title, body } = post || {};
 
   if (!post) {
-    return <Heading tag="h3" text="Empty post" />;
+    return <h3>Empty post</h3>;
   }
 
   return (
     <>
-      <Heading tag="h3" text={title} />
+      <h3>{title}</h3>
       <div>{body}</div>
     </>
   );

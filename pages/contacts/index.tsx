@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Heading from '../../components/Heading';
 import { GetStaticProps } from 'next';
 import { contactType } from '../../types';
 
@@ -23,7 +22,7 @@ export const getStaticProps: GetStaticProps = async () => {
 const Contacts = ({ contacts }: contactsTypeProps) => {
   return (
     <>
-      <Heading text={'Contacts List'} />
+      <h1>Contacts List</h1>
       <ul>
         {contacts &&
           contacts.map(({ id, name }) => {

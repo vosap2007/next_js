@@ -1,5 +1,4 @@
 import PostInfo from '../../components/PostInfo';
-import Heading from '../../components/Heading';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -33,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 const Post = ({ post }) => {
   return (
     <>
-      <Heading text={'Post'} />
+      <h1>Post</h1>
       <PostInfo post={post} />
     </>
   );

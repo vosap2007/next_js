@@ -1,4 +1,3 @@
-import Tag from './Heading';
 import Navbar from './Navbar';
 
 const Header = () => {

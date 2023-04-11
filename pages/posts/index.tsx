@@ -1,4 +1,3 @@
-import Heading from '../../components/Heading';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
 
@@ -18,7 +17,7 @@ export const getStaticProps: GetStaticProps = async () => {
 const Posts = ({ posts }) => {
   return (
     <>
-      <Heading text={'Posts'} />
+      <h1>Posts</h1>
       <ul>
         {posts &&
           posts.map(({ id, title }) => {
