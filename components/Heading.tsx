@@ -1,17 +1,8 @@
-import { FC } from 'react';
+import { headingType } from '../types';
 
-type headingType = {
-  text: string;
-  tag?: string;
-};
-
-const Heading: FC<headingType> = ({ text, tag }) => {
+const Heading = ({ tag, text }: headingType) => {
   const Tag = tag || 'h1';
-  return (
-    <>
-      <Tag>{text}</Tag>
-    </>
-  );
+  return <Tag>{text}</Tag>;
 };
 
 export default Heading;
